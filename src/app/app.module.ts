@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ResizableDraggableComponent } from './resizable-draggable/resizable-draggable.component';
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { ResizableDraggableComponent } from './resizable-draggable/resizable-dra
     ResizableDraggableComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CKEditorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

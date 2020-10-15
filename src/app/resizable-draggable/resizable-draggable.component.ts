@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, ViewChild, ElementRef, AfterViewInit, HostListener } from '@angular/core';
+import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 const enum Status {
   OFF = 0,
@@ -22,6 +23,7 @@ export class ResizableDraggableComponent implements OnInit, AfterViewInit {
   public mouse: {x: number, y: number}
   public status: Status = Status.OFF;
   private mouseClick: {x: number, y: number, left: number, top: number}
+  public Editor = ClassicEditor;
 
   ngOnInit() {}
 
